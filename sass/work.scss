@@ -1,0 +1,56 @@
+body {
+  background-color: #c02942;
+  color: #ffe28a;
+}
+
+@import "subpages";
+.element {
+  margin-top: 500px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+  .image {
+    width: 320px;
+  }
+}
+.otherWork {
+  margin-top: 150px;
+}
+.link {
+  color: #ffe28a !important;
+  font-weight: 700;
+}
+.bold {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+p {
+  color: #becbd1;
+}
+.other {
+  margin-top: 40px;
+}
+
+.otherImages {
+  height: 190px;
+}
+.subtitle {
+  font-size: 80px;
+  font-family: "Hamb";
+}
+[data-scroll] {
+  transition: all 1s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-50px);
+}

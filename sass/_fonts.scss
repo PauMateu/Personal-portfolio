@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Hamb";
+    src: url(fonts/hamb.woff) format("woff");
+}
+
+.title {
+    font-family: "Hamb";
+}
+
+h1,
+.button {
+    font-family: 'Lobster', cursive;
+}
+
+h2,
+.important {
+    font-family: 'Lobster', cursive;
+}
+
+p,
+h3,
+form {
+    font-family: "PT sans", sans-serif;
+}

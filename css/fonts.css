@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Hamb";
+  src: url(fonts/hamb.woff) format("woff");
+}
+
+.title {
+  font-family: "Hamb";
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+}
+/*# sourceMappingURL=fonts.css.map */

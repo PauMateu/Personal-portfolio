@@ -1,0 +1,121 @@
+body {
+  height: 2000px;
+  background: #363636;
+  color: #6fcb9f;
+}
+
+@font-face {
+  font-family: "Hamb";
+  src: url(fonts/hamb.woff) format("woff");
+}
+
+.title {
+  font-family: "Hamb";
+}
+
+h1,
+.button {
+  font-family: 'Lobster', cursive;
+}
+
+h2,
+.important {
+  font-family: 'Lobster', cursive;
+}
+
+p,
+h3,
+form {
+  font-family: "PT sans", sans-serif;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 50px;
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: auto;
+  text-align: center;
+}
+
+.header .title {
+  font-size: 100px;
+}
+
+.circle {
+  fill: #6fcb9f;
+}
+
+#mySVG {
+  overflow: visible !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 50%;
+  left: 18%;
+  width: 100vw;
+  display: block;
+}
+
+.st0 {
+  fill: none;
+  stroke-dashoffset: 3px;
+  stroke: #6fcb9f;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 20;
+}
+
+p,
+li {
+  color: #ffe28a;
+}
+
+.fa-li {
+  color: #6fcb9f;
+}
+
+.last {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.star {
+  list-style-type: none;
+  list-style: none;
+}
+
+.bold {
+  color: #ffedb3 !important;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffedb3;
+}
+
+.blue {
+  color: #6fcb9f;
+}
+
+[data-scroll] {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+}
+/*# sourceMappingURL=about.css.map */

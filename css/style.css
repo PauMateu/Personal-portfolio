@@ -1,0 +1,105 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Hamb";
+  src: url(fonts/hamb.woff) format("woff");
+}
+
+.title {
+  font-family: "Hamb";
+}
+
+h1,
+.button {
+  font-family: 'Lobster', cursive;
+}
+
+h2,
+.important {
+  font-family: 'Lobster', cursive;
+}
+
+p,
+h3,
+form {
+  font-family: "PT sans", sans-serif;
+}
+
+body {
+  background-color: #C02942;
+  color: #ffe28a;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+}
+
+body .main {
+  padding-top: 70px;
+}
+
+body .header {
+  text-align: center;
+}
+
+body .header h1 {
+  font-size: 80px;
+}
+
+body .navigation {
+  position: absolute;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  font-size: 14vw;
+  font-weight: 1000;
+  top: 35%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+body .navigation .navigation_container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+body .navigation a,
+body .navigation a:link,
+body .navigation a:visited {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  display: block;
+  color: #ffe28a;
+  text-decoration: none;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+  letter-spacing: -5px;
+  -webkit-backface-visibility: hidden;
+}
+
+body .navigation a:hover,
+body .navigation a:link:hover,
+body .navigation a:visited:hover {
+  transform: scale(1.1, 1.1);
+  /*you didn't have the semi-colons here*/
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale 1.1, 1.1;
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=style.css.map */

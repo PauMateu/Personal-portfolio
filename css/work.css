@@ -1,0 +1,113 @@
+body {
+  background-color: #c02942;
+  color: #ffe28a;
+}
+
+@font-face {
+  font-family: "Hamb";
+  src: url(fonts/hamb.woff) format("woff");
+}
+
+.title {
+  font-family: "Hamb";
+}
+
+h1,
+.button {
+  font-family: 'Lobster', cursive;
+}
+
+h2,
+.important {
+  font-family: 'Lobster', cursive;
+}
+
+p,
+h3,
+form {
+  font-family: "PT sans", sans-serif;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 50px;
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: auto;
+  text-align: center;
+}
+
+.header .title {
+  font-size: 100px;
+}
+
+.element {
+  margin-top: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+}
+
+.element .image {
+  width: 320px;
+}
+
+.otherWork {
+  margin-top: 150px;
+}
+
+.link {
+  color: #ffe28a !important;
+  font-weight: 700;
+}
+
+.bold {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+p {
+  color: #becbd1;
+}
+
+.other {
+  margin-top: 40px;
+}
+
+.otherImages {
+  height: 190px;
+}
+
+.subtitle {
+  font-size: 80px;
+  font-family: "Hamb";
+}
+
+[data-scroll] {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+/*# sourceMappingURL=work.css.map */

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pau Mateu</title>
+    <link href="../css/bootsrtap_css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">CONTACT</h1>
+        <p>
+          <span class="bold">LET'S MAKE SOMETHING!</span> I'm always on the
+          lookout for fun new projects so if you've got something that you think
+          we can <span class="bold">work together</span> on, send me a message
+          and we can talk about it! Get in touch via the
+          <span class="bold">form below</span>, or though one of my
+          <span class="bold">social media</span>.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form
+            action="https://postmail.invotes.com/send"
+            method="post"
+            id="email_form"
+          >
+            <div class="messages"></div>
+            <input
+              type="hidden"
+              name="access_token"
+              value="5gs8iphkja54zy6xo1z42z4y"
+            />
+            <input type="hidden" name="success_url" value="." />
+            <input type="hidden" name="error_url" value="." />
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      id="form_subject"
+                      type="text"
+                      name="subject"
+                      class="form-control"
+                      placeholder="Subject"
+                      required="required"
+                      data-error="Subject is required."
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      name="reply_to"
+                      id="form_email"
+                      type="email"
+                      class="form-control"
+                      placeholder="Mail"
+                      required="required"
+                      data-error="Valid email is required."
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea
+                      id="form_message"
+                      name="text"
+                      class="form-control"
+                      placeholder="Message"
+                      rows="4"
+                      required="required"
+                      data-error="Please, leave us a message."
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="button-container">
+                    <input class="button" type="submit" value="Send" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 social">
+          <p>
+            <span class="important">Mail:</span>
+            <span class="font">pau.mateu.jordi@gmail.com</span>
+          </p>
+          <p>
+            <span class="important">Linkedin:</span>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/pau-mateu-i-jordi-123004150/"
+              class="font"
+              >@paumateu</a
+            >
+          </p>
+          <p>
+            <span class="important">Github:</span>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.github.com/PauMateu"
+              class="font"
+              >@paumateu</a
+            >
+          </p>
+          <p>
+            <span class="important">Devpost: </span
+            ><a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://devpost.com/PauMateu"
+              class="font"
+              >/PauMateu</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

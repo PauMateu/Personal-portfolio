@@ -1,0 +1,72 @@
+$bg-color-1: #C02942;
+$text-color-1: #ffe28a;
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@import "fonts";
+body {
+    background-color: $bg-color-1;
+    color: $text-color-1;
+    -webkit-backface-visibility: hidden;
+    transition: all 1.3s ease;
+    .main {
+        padding-top: 70px;
+    }
+    .header {
+        h1 {
+            font-size: 80px;
+        }
+        text-align: center;
+    }
+    .navigation {
+        position: absolute;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 14vw;
+        font-weight: 1000;
+        top: 35%;
+        align-self: center;
+        width: 100%;
+        // perspective: 1000px;
+        // -webkit-transform: translate(-47%,-50%);
+        // -ms-transform: translate(-47%,-50%);
+        // transform: translate(-47%,-50%);
+        .navigation_container {
+            position: absolute;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        a,
+        a:link,
+        a:visited {
+            outline: none;
+            border: none;
+            background-color: transparent;
+            display: block;
+            color: $text-color-1;
+            text-decoration: none;
+            transition: all 1.3s ease;
+            letter-spacing: -5px;
+            -webkit-backface-visibility: hidden;
+            &:hover {
+                transform: scale(1.1, 1.1);
+                /*you didn't have the semi-colons here*/
+                -ms-transform: scale(1.1, 1.1);
+                -webkit-transform: scale (1.1, 1.1);
+                -moz-transform: scale(1.1, 1.1);
+                -o-transform: scale(1.1, 1.1);
+                letter-spacing: 2px;
+            }
+            #work {}
+            #about {}
+            #contact {}
+        }
+    }
+}

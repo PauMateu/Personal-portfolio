@@ -1,0 +1,82 @@
+$main: #6fcb9f;
+$text: #ffe28a;
+$third: #ffedb3;
+body {
+  height: 2000px;
+  background: #363636;
+  color: $main;
+}
+
+@import "subpages";
+.circle {
+  fill: $main;
+}
+
+#mySVG {
+  overflow: visible !important;
+  box-sizing: border-box;
+  top: 50%;
+  left: 18%;
+  width: 100vw;
+  display: block;
+  //position: absolute;
+}
+
+.st0 {
+  fill: none;
+  stroke-dashoffset: 3px;
+  stroke: $main;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 20;
+}
+
+p,
+li {
+  color: $text;
+}
+
+.fa-li {
+  color: $main;
+}
+.last {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.star {
+  list-style-type: none;
+  list-style: none;
+}
+
+.bold {
+  color: $third !important;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: $third;
+}
+
+.blue {
+  color: $main;
+}
+
+[data-scroll] {
+  transition: all 1s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  //  transform: translateX(0);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+  //  transform: translateX(-50px);
+}
