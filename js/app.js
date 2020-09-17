@@ -60,7 +60,7 @@ const Main = function () {
   var $bl = $("#container"),
     $th = $("#inner"),
     blW = $bl.outerWidth(),
-    blSW = $bl[0].scrollWidth,
+    blSW = blW,
     wDiff = blSW / blW - 0.9, // widths difference ratio
     mPadd = 0, // Mousemove Padding
     damp = 50, // Mousemove response softness
@@ -69,16 +69,19 @@ const Main = function () {
     posX = 0,
     mmAA = blW - mPadd * 2, // The mousemove available area
     mmAAr = blW / mmAA; // get available mousemove fidderence ratio
+  console.log("blsW", blSW);
+  console.log("blW", blW);
 
   //$bl.scrollLeft(($bl.width() - $th.width()) / 2);
 
   $bl.mousemove(function (e) {
     mXL = e.pageX - this.offsetLeft;
     mXR = -(e.pageX - this.getBoundingClientRect().right);
-    console.log("left:" + mXL);
-    console.log("Right:" + mXR);
+    // console.log("left:" + mXL);
+    // console.log("Right:" + mXR);
     mXLR = mXR - mXL * 2;
-    console.log(mXLR);
+    // console.log(mXLR);
+
     mX2 = mXLR - mPadd * mmAAr;
   });
 
