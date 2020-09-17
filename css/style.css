@@ -46,13 +46,11 @@ body .header {
 
 body .header h1 {
   font-size: 50px;
-  color: seashell;
 }
 
 @media only screen and (min-width: 992px) {
   body .header h1 {
     font-size: 80px;
-    color: #ffe28a;
   }
 }
 
@@ -150,5 +148,9 @@ body .navigation a:visited:hover {
   -moz-transform: scale(1.1, 1.1);
   -o-transform: scale(1.1, 1.1);
   letter-spacing: 2px;
+}
+
+.seashell {
+  color: seashell !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,10 +18,10 @@ body {
   .header {
     h1 {
       font-size: 50px;
-      color: seashell;
+
       @include desktop {
         font-size: 80px;
-        color: $text-color-1;
+        //color: $text-color-1;
       }
     }
     text-align: center;
@@ -95,4 +95,7 @@ body {
       }
     }
   }
+}
+.seashell {
+  color: seashell !important;
 }

@@ -52,6 +52,11 @@ TypeWriter.prototype.type = function () {
 };
 
 const Main = function () {
+  var x = $("h1"); // this is your element
+  var w = $(window).width();
+  if (w < 700) {
+    x.addClass("seashell");
+  }
   var $bl = $("#container"),
     $th = $("#inner"),
     blW = $bl.outerWidth(),
@@ -96,7 +101,7 @@ const Main = function () {
 
   $("#contact").hover(function () {
     $("body").css("background-color", "#300b3b");
-    $("a").css("color", "#e5d2b4");
+    $("a").attr("style", "color: #e5d2b4 !important");
     $("body").css("color", "#e5d2b4");
   });
 };
