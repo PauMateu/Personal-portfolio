@@ -17,7 +17,12 @@ body {
   }
   .header {
     h1 {
-      font-size: 80px;
+      font-size: 50px;
+      color: seashell;
+      @include desktop {
+        font-size: 80px;
+        color: $text-color-1;
+      }
     }
     text-align: center;
   }
@@ -74,7 +79,7 @@ body {
       color: $text-color-1;
       text-decoration: none;
       transition: all 1.3s ease;
-      letter-spacing: -3px;
+      //letter-spacing: -3px;
       @include desktop {
         letter-spacing: -5px;
       }

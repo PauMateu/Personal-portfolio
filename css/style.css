@@ -45,7 +45,15 @@ body .header {
 }
 
 body .header h1 {
-  font-size: 80px;
+  font-size: 50px;
+  color: seashell;
+}
+
+@media only screen and (min-width: 992px) {
+  body .header h1 {
+    font-size: 80px;
+    color: #ffe28a;
+  }
 }
 
 body .navigation {
@@ -121,7 +129,6 @@ body .navigation a:visited {
   text-decoration: none;
   -webkit-transition: all 1.3s ease;
   transition: all 1.3s ease;
-  letter-spacing: -3px;
   -webkit-backface-visibility: hidden;
 }
 
