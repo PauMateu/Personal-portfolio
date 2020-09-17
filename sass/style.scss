@@ -1,5 +1,6 @@
 $bg-color-1: #c02942;
 $text-color-1: #ffe28a;
+@import "mixins";
 html {
   max-width: 100%;
   overflow-x: hidden;
@@ -24,11 +25,23 @@ body {
     position: absolute;
     justify-content: space-around;
     text-align: center;
-    font-size: 14vw;
+    font-size: 11vh;
     font-weight: 1000;
-    top: 35%;
+    top: 50%;
+    @include tablet {
+      top: 35%;
+      font-size: 14vw;
+    }
+    @include desktop {
+      top: 35%;
+      font-size: 14vw;
+    }
     align-self: center;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
     // perspective: 1000px;
     // -webkit-transform: translate(-47%,-50%);
     // -ms-transform: translate(-47%,-50%);
@@ -39,9 +52,17 @@ body {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
+      //   justify-content: center;
+      //   align-items: center;
       margin: 0;
+      @include desktop {
+        flex-direction: row;
+      }
+      div {
+        flex: 1;
+        max-width: 33.3%;
+      }
     }
     a,
     a:link,
@@ -53,7 +74,10 @@ body {
       color: $text-color-1;
       text-decoration: none;
       transition: all 1.3s ease;
-      letter-spacing: -5px;
+      letter-spacing: -3px;
+      @include desktop {
+        letter-spacing: -5px;
+      }
       -webkit-backface-visibility: hidden;
       &:hover {
         transform: scale(1.1, 1.1);
@@ -63,12 +87,6 @@ body {
         -moz-transform: scale(1.1, 1.1);
         -o-transform: scale(1.1, 1.1);
         letter-spacing: 2px;
-      }
-      #work {
-      }
-      #about {
-      }
-      #contact {
       }
     }
   }

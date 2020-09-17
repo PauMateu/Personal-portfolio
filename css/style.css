@@ -53,13 +53,33 @@ body .navigation {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
-  font-size: 14vw;
+  font-size: 11vh;
   font-weight: 1000;
-  top: 35%;
+  top: 50%;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media only screen and (min-width: 768px) {
+  body .navigation {
+    top: 35%;
+    font-size: 14vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body .navigation {
+    top: 35%;
+    font-size: 14vw;
+  }
 }
 
 body .navigation .navigation_container {
@@ -67,13 +87,27 @@ body .navigation .navigation_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  body .navigation .navigation_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+body .navigation .navigation_container div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 33.3%;
 }
 
 body .navigation a,
@@ -87,8 +121,16 @@ body .navigation a:visited {
   text-decoration: none;
   -webkit-transition: all 1.3s ease;
   transition: all 1.3s ease;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   -webkit-backface-visibility: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+  body .navigation a,
+  body .navigation a:link,
+  body .navigation a:visited {
+    letter-spacing: -5px;
+  }
 }
 
 body .navigation a:hover,

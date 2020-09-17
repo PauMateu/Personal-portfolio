@@ -124,6 +124,16 @@ h3 {
   color: #6fcb9f;
 }
 
+.header {
+  margin-bottom: 300px;
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    margin-bottom: 20px;
+  }
+}
+
 [data-scroll] {
   -webkit-transition: all 1s;
   transition: all 1s;

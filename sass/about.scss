@@ -69,7 +69,12 @@ h3 {
 .blue {
   color: $main;
 }
-
+.header {
+  margin-bottom: 300px;
+  @include desktop {
+    margin-bottom: 20px;
+  }
+}
 [data-scroll] {
   transition: all 1s;
 }
