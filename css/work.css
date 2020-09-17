@@ -31,7 +31,7 @@ form {
 .header {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
   padding-top: 50px;
   display: block;
   -ms-flex-line-pack: center;
@@ -42,6 +42,24 @@ form {
 
 .header .title {
   font-size: 100px;
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    width: 50%;
+  }
+}
+
+p,
+li {
+  font-size: 14px !important;
+}
+
+@media only screen and (min-width: 992px) {
+  p,
+  li {
+    font-size: 16px !important;
+  }
 }
 
 .element {

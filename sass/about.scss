@@ -1,13 +1,16 @@
 $main: #6fcb9f;
 $text: #ffe28a;
 $third: #ffedb3;
+
+@import "subpages";
+@import "mixins";
+
 body {
   height: 2000px;
   background: #363636;
   color: $main;
 }
 
-@import "subpages";
 .circle {
   fill: $main;
 }

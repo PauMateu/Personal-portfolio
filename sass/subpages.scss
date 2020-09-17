@@ -1,14 +1,27 @@
 @import "fonts";
+@import "mixins";
+
 .header {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 50px;
+  display: block;
+  align-content: center;
+  padding: auto;
+  text-align: center;
+  .title {
+    font-size: 100px;
+  }
+
+  @include desktop {
     width: 50%;
-    padding-top: 50px;
-    display: block;
-    align-content: center;
-    padding: auto;
-    text-align: center;
-    .title {
-        font-size: 100px;
-    }
+  }
+}
+p,
+li {
+  font-size: 14px !important;
+  @include desktop {
+    font-size: 16px !important;
+  }
 }
