@@ -7,121 +7,96 @@ html {
   font-family: "Hamb";
   src: url(fonts/hamb.woff) format("woff");
 }
-
 .title {
   font-family: "Hamb";
 }
 
 h1,
 .button {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
 
 h2,
 .important {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
 
 p,
 h3,
-form {
-  font-family: "PT sans", sans-serif;
+form,
+li {
+  font-family: "PT sans", sans-serif !important;
 }
 
 body {
   background-color: #c02942;
   color: #ffe28a;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: all 1.3s ease;
   transition: all 1.3s ease;
 }
-
 body .main {
   padding-top: 70px;
 }
-
 body .header {
   text-align: center;
 }
-
 body .header h1 {
   font-size: 50px;
 }
-
 @media only screen and (min-width: 992px) {
   body .header h1 {
     font-size: 80px;
   }
 }
-
 body .navigation {
   position: absolute;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   text-align: center;
   font-size: 11vh;
   font-weight: 1000;
   top: 45%;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
-
 @media only screen and (min-width: 768px) {
   body .navigation {
     top: 35%;
     font-size: 14vw;
   }
 }
-
 @media only screen and (min-width: 992px) {
   body .navigation {
     top: 35%;
     font-size: 14vw;
   }
 }
-
 body .navigation .navigation_container {
   position: absolute;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0;
 }
-
 @media only screen and (min-width: 992px) {
   body .navigation .navigation_container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
-
 body .navigation .navigation_container div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   max-width: 100%;
 }
-
 @media only screen and (min-width: 992px) {
   body .navigation .navigation_container div {
     max-width: 33.3%;
   }
 }
-
 body .navigation a,
 body .navigation a:link,
 body .navigation a:visited {
@@ -131,11 +106,9 @@ body .navigation a:visited {
   display: block;
   color: #ffe28a;
   text-decoration: none;
-  -webkit-transition: all 1.3s ease;
   transition: all 1.3s ease;
   -webkit-backface-visibility: hidden;
 }
-
 @media only screen and (min-width: 992px) {
   body .navigation a,
   body .navigation a:link,
@@ -143,7 +116,6 @@ body .navigation a:visited {
     letter-spacing: -5px;
   }
 }
-
 body .navigation a:hover,
 body .navigation a:link:hover,
 body .navigation a:visited:hover {
@@ -159,4 +131,5 @@ body .navigation a:visited:hover {
 .seashell {
   color: seashell !important;
 }
+
 /*# sourceMappingURL=style.css.map */

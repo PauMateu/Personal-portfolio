@@ -6,7 +6,7 @@ body {
 @import "subpages";
 
 .element {
-  margin-top: 500px;
+  margin-top: 250px;
   display: flex;
   justify-content: center;
   /* align horizontal */
@@ -27,8 +27,15 @@ body {
   color: #ffffff !important;
   font-weight: 700;
 }
+.position{
+  color: #ffffff !important;
+}
+h4{
+  font-family: "Hamb", cursive;
+  opacity: 0.8;
+}
 
-p {
+p,li {
   color: #becbd1;
 }
 .other {
